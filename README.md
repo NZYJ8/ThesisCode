@@ -11,3 +11,5 @@ For privacy, all filepaths have been replaced with 'custom_filepath'
 
 OGGM v1.6.2 (latest release) was used for all simultions.
 OGGM's documentation can be found [here](https://docs.oggm.org/en/stable/) and helpful code for OGGM can be found [here](https://tutorials.oggm.org/stable/notebooks/welcome.html)
+
+Note: During the final formatting of the thesis, a number of small modifications were made to the plotting code to make some cosmetic updates to a number of figures, therefore these functions now don't 100% replicate the figures within the thesis, but they will be incredibly similar. 
