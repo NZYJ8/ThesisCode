@@ -563,11 +563,9 @@ def process_plot(GCMs, totalregion=False, statistics = False, stat_sub = False):
                 clim_mean = np.nanmean(mean[clim_mask])
                 clim_std = np.nanmean(std[clim_mask])
 
-                # Prints end year (2100) and 2071-2100 means with standard deviation
                 print(f'\nRegion {subregion}, {ssp_labels[ssp]}:')
                 print(f'2100 Volume: {vol_2100:.4f}% (SD = {std_2100:.4f}%)')
                 print(f'2071–2100 Climatology: {clim_mean:.4f}% (SD = {clim_std:.4f}%)')   
-
 
         # Plots the subregion's mean volume and shaded standard deviation under each SSP (note: ended up using a very low alpha because I wasn't happy with readability)
         for ssp, colour in zip(ssp_list, ['#059105', '#115b8f', '#ff9d00', '#ff0000']):
@@ -622,7 +620,6 @@ def process_plot(GCMs, totalregion=False, statistics = False, stat_sub = False):
                 plt.grid(True, linestyle='--', alpha=0.5)
                 plt.tight_layout()
                 plt.show()
-
 
             # Conducts Kruskal-Wallis test across subregions using GCM means (decided to use non-parametric after doing Q-Q plots)
             print('\nKruskal-Wallis Test (regional GCM means):')
