@@ -98,7 +98,7 @@ def chunk_sim(GCM, valid=None, process_chunk_size=50, clear_previous=False):
                 reset=False
             )
 
-            # Path to folder containing all GCM files downloaded from OGGM's server local (by default OGGM keeps these within its working directory structure, but I had to store on SSD for storage)
+            # Path to folder containing all GCM files downloaded from OGGM's server locally (by default OGGM keeps these within its working directory structure, but I had to store on SSD for storage)
             climate_files = 'custom_filepath'
 
             # Accesses GCM files (note: by default GCM output would instead be accessed via OGGM's server)  
